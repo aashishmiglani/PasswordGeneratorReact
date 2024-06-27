@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import './App.css'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
+i
 
 function App() {
   const [length, setLength] = useState(10)
@@ -39,7 +39,7 @@ function App() {
   const copyToClipboard = useCallback(() => {
     passwordRef.current.select()
     window.navigator.clipboard.writeText(password)
-    toast("Copied!😊");
+    
 
   }, [password])
 
@@ -51,7 +51,7 @@ function App() {
 
         <input type="text" ref={passwordRef} className='rounded border-2 p-3 w-full ' placeholder='Password' value={password} />
         <button className='bg-orange-400' onClick={copyToClipboard}>Copy</button>
-        <ToastContainer />
+        
       </div>
       <div className='mt-4'>
 
